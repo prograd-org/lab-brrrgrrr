@@ -1,43 +1,47 @@
-<h1>ProGrad</h1>
+![Image description](https://i1.faceprep.in/ProGrad/face-logo-resized.png)
 
-## LAB | BRRRGRRR
+# ProGrad Lab | BRRRGRRR
 
-Mama Jenny is the best cook you've ever met. She makes the most amazing burgers in her tiny diner across the street. Mama is extremely popular and has recently had the idea to take her business online. Unfortunately, she isn't the best at web development. I've heard you are though. Help Mama create a website that'll attract more audience and help her make a living through it. Go to the `src/app.js` file and complete all the unfinished code to satiate her sweet tooth.
+Mama Jenny is the best cook you would ever met. She makes the most amazing burgers in her tiny diner across the street. Mama is extremely popular and has recently had the idea to take her business online. Unfortunately, she isn't the best at web development. Mama has heard of ProGrads and she thought you could do a great job. 
 
-## Requirements
+Help Mama create a website that'll attract more audience and help her make a living through it. Go to the `src/app.js` file and complete all the unfinished code to let her live here dream.
 
-- Fork this repo
-- Clone this repo
-- Practice DOM features
+## What should you do
+```
+Fork this repo
+Clone this repo
+Practice DOM Features
+```
 
-## Submission
+## How To Submit
+```
+Upon completion, run the following commands:
 
-- Upon completion, run the following commands:
+git add .
+git commit -m "ProGrad ID"
+git push origin master
 
-  ```
-  git add .
-  git commit -m "done"
-  git push origin master
-  ```
+And finally, create a pull request so your ProGrad Mentor (PM) can review your work.
+```
 
-- Create Pull Request so your TAs can check up your work.
+## Progression 1: LAYERS
 
-## Trial 1: What do we have here?
+As your first task, you've got to enable the different layers of the burger on the screen. Create a `render()` for each ingredient and make sure that it displays the selected layer.
 
-For your first task, you've got to enable the different layers of the burger on the screen. Create a `render()` for each ingredient and make sure that it displays the selected player.
-
-## Trial 2: Give me an extra cheese!
+## Progression 2: LAYER THEM UP
 
 Setup `EventListeners`, so that we can add or remove different ingredients by clicking on the respective ingredient buttons. That's the whole point of it.
 
-## Challenge 1: Do I need more cheese?
+## Challenge 1: IT GETS CHEESEY
 
-Make the ingredient buttons popup or not based on their current active state. This would help customers identify what they've selected and what not.
+Make the ingredient buttons pop up based on their current active state. This would help customers identify what ingredients they've selected and what's left out.
 
-## Challenge 2: Note my order!
+## Challenge 2: TAKE THE ORDER
 
 Show the customer only the ingredients that they've selected on the chalk board.
 
-## Judgement 1: Bill the BRRRGRR!!
+## Challenge 3: BILL TIME
 
-The customer has had a good time customizing his brrgrr. Time for him to pay up. Use ingredient prices to calculate how much a burger costs and display it to the customer.
+The customer has had a good time customizing his brrrgrrr. Time for him to pay. Use ingredient prices to calculate the cost of a brrrgrrr and display it to the customer.
+
+Happy Coding ProGrad ❤️
