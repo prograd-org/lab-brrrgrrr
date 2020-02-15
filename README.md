@@ -24,23 +24,23 @@ git push origin master
 And finally, create a pull request so your ProGrad Mentor (PM) can review your work.
 ```
 
-## Progression 1: LAYERS
+### Progression 1: LAYERS
 
 As your first task, you've got to enable the different layers of the burger on the screen. Create a `render()` for each ingredient and make sure that it displays the selected layer.
 
-## Progression 2: LAYER THEM UP
+### Progression 2: LAYER THEM UP
 
 Setup `EventListeners`, so that we can add or remove different ingredients by clicking on the respective ingredient buttons. That's the whole point of it.
 
-## Challenge 1: IT GETS CHEESEY
+### Challenge 1: IT GETS CHEESEY
 
 Make the ingredient buttons pop up based on their current active state. This would help customers identify what ingredients they've selected and what's left out.
 
-## Challenge 2: TAKE THE ORDER
+### Challenge 2: TAKE THE ORDER
 
 Show the customer only the ingredients that they've selected on the chalk board.
 
-## Challenge 3: BILL TIME
+### Challenge 3: BILL TIME
 
 The customer has had a good time customizing his brrrgrrr. Time for him to pay. Use ingredient prices to calculate the cost of a brrrgrrr and display it to the customer.
 
