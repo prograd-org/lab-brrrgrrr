@@ -36,12 +36,12 @@ function renderAll() {
 }
 
 function renderPatty() {
-  let $patty = document.querySelector("#patty");
+  let patty = document.querySelector("#patty");
   //you can also use getElementById
   if (state.Patty) {
-    $patty.style.display = "inherit";
+    patty.style.display = "inherit";
   } else {
-    $patty.style.display = "none";
+    patty.style.display = "none";
   }
 }
 
