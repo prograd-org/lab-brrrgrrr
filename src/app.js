@@ -131,4 +131,4 @@ function renderButtons() {
 
   //Judgement 1
   //In the p element having price-details as the class, display the calculated
-  //price based on ingredients
+  //price based on ingredients kf
