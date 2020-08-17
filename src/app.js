@@ -115,20 +115,39 @@ document.querySelector(".btn-lettuce").onclick = function () {
 };
 
 //Challenge 1 - Add/Remove the class active to the buttons based on state
-function renderButtons() {
-  let button = document.getElementsByClassName("button-container");
+function renderButtons(bt, cls) {
+  let button = document.getElementsByClassName("button-" + bt);
   for (var i = 0; i < button.length; i++) {
-    button[i].addEventListener("click", function () {
-      if (this.classList.contains("active")) {
-        this.removeClass("active");
-      } else {
-        this.addClass("active");
-      }
-    });
+    if (cls == true) {
+      button.classList.toggle("active");
+    } else {
+      button.classList.toggle("active");
+    }
   }
+}
 
-  //Challenge 2 - Render only the items selected in the ingredients board based on the state
 
-  //Judgement 1
-  //In the p element having price-details as the class, display the calculated
-  //price based on ingredients kf
+//Challenge 2 - Render only the items selected in the ingredients board based on the state
+function renderIngredientsBoard(key, value) {
+  var button = document.querySelector("." + key);
+  if (value == true) {
+    button.style.display = "block";
+  } else {
+    button.style.display = "none";
+  }
+}
+
+//Judgement 1
+//In the p element having price-details as the class, display the calculated
+//price based on ingredients
+
+function renderPrice() {
+  var sum = 0;
+  var prices = Object.entries(state);
+  prices.foreach((key) => {
+    if (key[1] == true) {
+      sum += (ingredients[key[0]]);
+    }
+  });
+  document.querySelector(".price-details").innerHTML = "INR " + sum;
+}
