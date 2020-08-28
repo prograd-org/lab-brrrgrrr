@@ -163,4 +163,5 @@ const renderPrice = () => {
   }
 
   document.querySelector(".price-details").innerHTML = `INR {totalPrice}`;
+  
 };
