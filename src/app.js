@@ -30,7 +30,6 @@ function renderAll() {
   renderTomatoes();
   renderOnions();
   renderLettuce();
-  //renderButtons();
   renderIngredientsBoard();
   renderPrice();
 }
