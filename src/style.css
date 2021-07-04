@@ -43,16 +43,13 @@ body {
     background-color: #212121;
 }
 
-
-
-
 .Group-7 {
     width: 240px;
     height: 301px;
     object-fit: contain;
     position: absolute;
     top: 10%;
-    right: 10%;
+    right: 2%;
 }
 
 .Group-3 {
@@ -74,10 +71,10 @@ body {
 
 .Rectangle2 {
     position: absolute;
-    top: 0%;
-    left: 5%;
-    width: 657px;
-    height: 128px;
+    top: 3.5%;
+    left: 2%;
+    width: 520px;
+    height: 110px;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.08);
     border: solid 1px #e4e4e4;
     background-color: #ffffff;
@@ -95,7 +92,7 @@ body {
 }
 
 .button-container {
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     justify-content: space-around;
 }
@@ -119,8 +116,8 @@ body {
 
 .button.active {
 
-    width: 112px;
-    height: 58px;
+    width: 75px;
+    height: 50px;
     background-color: #ffd058;
     line-height: 58px;
     text-align: center;
@@ -132,12 +129,12 @@ body {
     justify-content: center;
     align-items: center;
     position: absolute;
-    right: 10%;
-    bottom: 10%;
-    width: 450px;
+   bottom:15%;
+   right:0%;
+    width: 350px;
     height: 179px;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.08);
-    border: solid 1px #e4e4e4;
+    border: solid 2px #e4e4e4;
     background-color: #ffffff;
 }
 
@@ -153,6 +150,8 @@ body {
 
     width: 158px;
     height: 170px;
+   
+  
     object-fit: contain;
 
 }

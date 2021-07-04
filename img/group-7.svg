@@ -5,25 +5,26 @@
         <path fill="#CC8443" d="M23.5.5v300h-13V.5zM229.5.5v300h-13V.5z"/>
         <path fill="#CD833E" d="M0 272h240v16H0z"/>
         <text fill="#FFF" font-family="MarkerFelt-Thin, Marker Felt" font-size="18" font-weight="300">
-            <tspan x="95.354" y="58">PRICES</tspan>
+            <tspan x="88.354" y="58"> PRICES</tspan>
+            
         </text>
         <text fill="#FFF" font-family="MarkerFelt-Thin, Marker Felt" font-size="16" font-weight="300">
-            <tspan x="31" y="90">Whole wheat bun ………… 20</tspan>
+            <tspan x="31" y="95">Whole wheat bun .......... 20</tspan>
         </text>
         <text fill="#FFF" font-family="MarkerFelt-Thin, Marker Felt" font-size="16" font-weight="300">
-            <tspan x="31" y="113">Patty …………………..………… 80</tspan>
+            <tspan x="31" y="118">Patty ……………...…... 80</tspan>
         </text>
         <text fill="#FFF" font-family="MarkerFelt-Thin, Marker Felt" font-size="16" font-weight="300">
-            <tspan x="31" y="136">Onions .………………..………… 20</tspan>
+            <tspan x="31" y="141">Onions .………….......... 20</tspan>
         </text>
         <text fill="#FFF" font-family="MarkerFelt-Thin, Marker Felt" font-size="16" font-weight="300">
-            <tspan x="31" y="159">Tomatoes .……………………… 20</tspan>
+            <tspan x="31" y="164">Tomatoes ....................... 20</tspan>
         </text>
         <text fill="#FFF" font-family="MarkerFelt-Thin, Marker Felt" font-size="16" font-weight="300">
-            <tspan x="31" y="182">Lettuce ….……………………… 20</tspan>
+            <tspan x="31" y="187">Lettuce .......................... 20</tspan>
         </text>
         <text fill="#FFF" font-family="MarkerFelt-Thin, Marker Felt" font-size="16" font-weight="300">
-            <tspan x="31" y="205">Cheese slice ..………………… 10</tspan>
+            <tspan x="31" y="210">Cheese slice .................. 10</tspan>
         </text>
     </g>
 </svg>
