@@ -47,29 +47,123 @@ function renderPatty() {
 
 function renderCheese() {
   //Trial 1 - Change the visibility of cheese based on state by manipulating the DOM
+  let cheese= document.querySelector("#cheese")
+  if(state.Cheese)
+  {
+    cheese.style.display = "inherit"
+  }
+  else{
+    cheese.style.display="none"
+  }
+
 }
 
 function renderTomatoes() {
   //Trial 1 - Change the visibility of Tomatoes based on state by manipulating the DOM
+  let tomato= document.querySelector("#tomato")
+  if(state.Tomatoes)
+  {
+    tomato.style.display = "inherit"
+    items[2].innerHTML="Tomatoes"
+
+  }
+  else
+  {
+    tomato.style.display="none"
+    items[2].innerHTML=""
+
+   
+  }
 }
 
 function renderOnions() {
   //Trial 1 - Change the visibility of Onions based on state by manipulating the DOM
+  let onion= document.querySelector("#onion")
+  if(state.Onions)
+  {
+    onion.style.display = "inherit"
+    items[3].innerHTML="Onions"
+
+  }
+  else
+  {
+    onion.style.display="none"
+    items[3].innerHTML=""
+
+   
+  }
 }
+
 
 function renderLettuce() {
   //Trial 1 - Change the visibility of Lettuce based on state by manipulating the DOM
+  let lettuce= document.querySelector("#lettuce")
+  if(state.Lettuce)
+  {
+    lettuce .style.display = "inherit"
+    items[4].innerHTML="Lettuce"
+
+
+  }
+  else
+  {
+    lettuce.style.display="none"
+    items[4].innerHTML=""
+
+   
+  }
 }
 
 document.querySelector(".btn-patty").onclick = function () {
   state.Patty = !state.Patty;
+  if (state.Patty)
+  {
+  cost = Number.parseInt(cost) + ingredients.Patty
+  document.querySelector(".price-details").innerHTML= inr + " " + cost
+  }
+  else
+  {
+    cost = Number.parseInt(cost) - ingredients.Patty
+  document.querySelector(".price-details").innerHTML= inr + " " + cost
+  }
+
   renderAll();
 };
 
-// Trial 2 - Setup event listener for the cheese button
 
+// Trial 2 - Setup event listener for the cheese button
+document.querySelector(".btn-tomatoes").onclick = function () {
+  state.Tomatoes = !state.Tomatoes;
+  if (state.Tomatoes)
+  {
+  cost = Number.parseInt(cost) + ingredients.Tomatoes
+  document.querySelector(".price-details").innerHTML= inr + " " + cost
+  }
+  else
+  {
+    cost = Number.parseInt(cost) - ingredients.Tomatoes
+  document.querySelector(".price-details").innerHTML= inr + " " + cost
+  }
+
+  renderAll();
+};
 
 // Trial 2 - Setup event listener for the tomatoes button
+document.querySelector(".btn-onions").onclick = function () {
+  state.Onions = !state.Onions;
+  if (state.Onions)
+  {
+  cost = Number.parseInt(cost) + ingredients.Onions
+  document.querySelector(".price-details").innerHTML= inr + " " + cost
+  }
+  else
+  {
+    cost = Number.parseInt(cost) - ingredients.Onions
+  document.querySelector(".price-details").innerHTML= inr + " " + cost
+  }
+
+  renderAll();
+};
 
 
 // Trial 2 - Setup event listener for the onion button
