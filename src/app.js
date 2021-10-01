@@ -30,9 +30,9 @@ function renderAll() {
   renderTomatoes();
   renderOnions();
   renderLettuce();
-  //renderButtons();
-  //renderIngredientsBoard();
-  //renderPrice();
+  renderButtons();
+  renderIngredientsBoard();
+  renderPrice();
 }
 let items=document.querySelectorAll(".items")
 let price=document.querySelector(".price-details").innerHTML
