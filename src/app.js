@@ -30,18 +30,25 @@ function renderAll() {
   renderTomatoes();
   renderOnions();
   renderLettuce();
-  renderButtons();
-  renderIngredientsBoard();
-  renderPrice();
+  //renderButtons();
+  //renderIngredientsBoard();
+  //renderPrice();
 }
+let items=document.querySelectorAll(".items")
+let price=document.querySelector(".price-details").innerHTML
+   let {0:inr, 1:cost}=price.split(" ")
 
 function renderPatty() {
   let patty = document.querySelector("#patty");
   //you can also use getElementById
   if (state.Patty) {
     patty.style.display = "inherit";
-  } else {
+    items[0].innerHTML="Patty"
+  } 
+  else
+   {
     patty.style.display = "none";
+    items[0].innerHTML=""
   }
 }
 
@@ -51,9 +58,13 @@ function renderCheese() {
   if(state.Cheese)
   {
     cheese.style.display = "inherit"
+    items[1].innerHTML="Cheese"
+
   }
-  else{
+  else
+  {
     cheese.style.display="none"
+    items[1].innerHTML=""
   }
 
 }
@@ -132,6 +143,24 @@ document.querySelector(".btn-patty").onclick = function () {
 
 
 // Trial 2 - Setup event listener for the cheese button
+
+document.querySelector(".btn-cheese").onclick = function () {
+  state.Cheese = !state.Cheese;
+  if (state.Cheese)
+  {
+  cost = Number.parseInt(cost) + ingredients.Cheese
+  document.querySelector(".price-details").innerHTML= inr + " " + cost
+  }
+  else
+  {
+    cost = Number.parseInt(cost) - ingredients.Cheese
+  document.querySelector(".price-details").innerHTML= inr + " " + cost
+  }
+
+  renderAll();
+};
+
+// Trial 2 - Setup event listener for the tomatoes button
 document.querySelector(".btn-tomatoes").onclick = function () {
   state.Tomatoes = !state.Tomatoes;
   if (state.Tomatoes)
@@ -148,7 +177,10 @@ document.querySelector(".btn-tomatoes").onclick = function () {
   renderAll();
 };
 
-// Trial 2 - Setup event listener for the tomatoes button
+
+
+// Trial 2 - Setup event listener for the onion button
+
 document.querySelector(".btn-onions").onclick = function () {
   state.Onions = !state.Onions;
   if (state.Onions)
@@ -166,11 +198,23 @@ document.querySelector(".btn-onions").onclick = function () {
 };
 
 
-// Trial 2 - Setup event listener for the onion button
-
-
 // Trial 2 - Setup event listener for the lettuce button
 
+document.querySelector(".btn-luttuce").onclick = function () {
+  state.Lettuce = !state.Lettuce;
+  if (state.Lettuce)
+  {
+  cost = Number.parseInt(cost) + ingredients.Lettuce
+  document.querySelector(".price-details").innerHTML= inr + " " + cost
+  }
+  else
+  {
+    cost = Number.parseInt(cost) - ingredients.Lettuce
+  document.querySelector(".price-details").innerHTML= inr + " " + cost
+  }
+
+  renderAll();
+};
 
 //Challenge 1 - Add/Remove the class active to the buttons based on state
 
