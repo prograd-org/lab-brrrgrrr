@@ -9,9 +9,6 @@
 body {
     font-family: 'Ubuntu', sans-serif;
 }
-
-
-
 .header {
     position: relative;
 }
@@ -132,9 +129,9 @@ body {
     justify-content: center;
     align-items: center;
     position: absolute;
-    right: 10%;
+    right: 1%;
     bottom: 10%;
-    width: 450px;
+    width: 300px;
     height: 179px;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.08);
     border: solid 1px #e4e4e4;
