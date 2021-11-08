@@ -1,10 +1,10 @@
 // Write your code on this file. Please don't change the existing code
-// unless absolutely needed.
+// unless absolutely needed...
 
-//Initial price of the burger
+//Initial price of the burger..
 var wholeWheatBun = 10;
 
-//Ingredients of the burger along with the price
+//Ingredients of the burger along with the price..
 // Clue: the name is same as the textcontent of the button. Will be useful later on :)
 var ingredients = {
   Patty: 80,
@@ -14,7 +14,7 @@ var ingredients = {
   Lettuce: 20
 };
 
-//Current state of the ingredients in the burger
+//Current state of the ingredients in the burger..
 var state = {
   Patty: true,
   Cheese: true,
