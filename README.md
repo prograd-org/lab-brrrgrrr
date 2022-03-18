@@ -44,4 +44,4 @@ Show the customer only the ingredients that they've selected on the chalk board.
 
 The customer has had a good time customizing his brrrgrrr. Time for him to pay. Use ingredient prices to calculate the cost of a brrrgrrr and display it to the customer.
 
-Happy Coding ProGrad ❤️
+By Yash Thakkar ❤️
