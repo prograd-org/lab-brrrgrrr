@@ -1,5 +1,3 @@
-// Write your code on this file. Please don't change the existing code
-// unless absolutely needed.
 
 //Initial price of the burger
 var wholeWheatBun = 10;
