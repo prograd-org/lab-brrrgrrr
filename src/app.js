@@ -203,4 +203,4 @@ function renderPrice() {
     price += 45;
   }
   document.querySelector(".price-details").innerHTML = `INR ${price}`;
-}
+} 
