@@ -204,3 +204,4 @@ function renderPrice() {
   }
   document.querySelector(".price-details").innerHTML = `INR ${price}`;
 }
+ 
