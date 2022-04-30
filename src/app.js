@@ -30,9 +30,6 @@ function renderAll() {
   renderTomatoes();
   renderOnions();
   renderLettuce();
-  // renderButtons();
-  //renderIngredientsBoard();
-  //renderPrice();
 }
 let items = document.querySelectorAll(".items")
 let price = document.querySelector(".price-details").innerHTML
@@ -44,11 +41,6 @@ function renderPatty() {
   if (state.Patty) {
     patty.style.display = "inherit";
     items[0].innerHTML = "Patty"
-
-
-
-
-
   } else {
     patty.style.display = "none";
     items[0].innerHTML = ""
@@ -62,16 +54,10 @@ function renderCheese() {
   if (state.Cheese) {
     cheese.style.display = "inherit"
     items[1].innerHTML = "Cheese"
-
-
-
   } else {
     cheese.style.display = "none"
     items[1].innerHTML = ""
-
-
   }
-
 }
 
 function renderTomatoes() {
@@ -80,12 +66,9 @@ function renderTomatoes() {
   if (state.Tomatoes) {
     tomato.style.display = "inherit"
     items[2].innerHTML = "Tomatoes"
-
   } else {
     tomato.style.display = "none"
     items[2].innerHTML = ""
-
-
   }
 }
 
@@ -95,12 +78,9 @@ function renderOnions() {
   if (state.Onions) {
     onion.style.display = "inherit"
     items[3].innerHTML = "Onions"
-
   } else {
     onion.style.display = "none"
     items[3].innerHTML = ""
-
-
   }
 }
 
@@ -110,13 +90,9 @@ function renderLettuce() {
   if (state.Lettuce) {
     lettuce.style.display = "inherit"
     items[4].innerHTML = "Lettuce"
-
-
   } else {
     lettuce.style.display = "none"
     items[4].innerHTML = ""
-
-
   }
 }
 
@@ -129,12 +105,10 @@ document.querySelector(".btn-patty").onclick = function () {
     cost = Number.parseInt(cost) - ingredients.Patty
     document.querySelector(".price-details").innerHTML = inr + " " + cost
   }
-
   renderAll();
 };
 
 // Trial 2 - Setup event listener for the cheese button
-
 document.querySelector(".btn-cheese").onclick = function () {
   state.Cheese = !state.Cheese;
   console.log(state.Cheese)
@@ -145,7 +119,6 @@ document.querySelector(".btn-cheese").onclick = function () {
     cost = Number.parseInt(cost) - ingredients.Cheese
     document.querySelector(".price-details").innerHTML = inr + " " + cost
   }
-
   renderAll();
 };
 
@@ -159,7 +132,6 @@ document.querySelector(".btn-tomatoes").onclick = function () {
     cost = Number.parseInt(cost) - ingredients.Tomatoes
     document.querySelector(".price-details").innerHTML = inr + " " + cost
   }
-
   renderAll();
 };
 
@@ -173,7 +145,6 @@ document.querySelector(".btn-onions").onclick = function () {
     cost = Number.parseInt(cost) - ingredients.Onions
     document.querySelector(".price-details").innerHTML = inr + " " + cost
   }
-
   renderAll();
 };
 
@@ -187,6 +158,5 @@ document.querySelector(".btn-lettuce").onclick = function () {
     cost = Number.parseInt(cost) - ingredients.Lettuce
     document.querySelector(".price-details").innerHTML = inr + " " + cost
   }
-
   renderAll();
 };
